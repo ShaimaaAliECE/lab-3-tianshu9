@@ -1,22 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class Axe : Collectable
+    public class Axe : Tool
     {
-        public Axe(string name) : base(name, score: 0, value: 0) { }
+        public Axe(string Name) : base(Name) { }
 
-        public override void AddMe(List<Collectable> collected)
+        public override void DoAction()
         {
-            collected.Add(this);
-            Console.WriteLine($"{Name} Collected, Congrats!!!!");
-            Console.WriteLine("Axe is Used");
+            Console.WriteLine("Axe is used");
         }
 
         public override void Display()
         {
-            Console.WriteLine($"Axe {Name} is displayed");
+            Console.WriteLine(String.Format("Axe {0} is displayed", this.Name));
         }
     }
 }

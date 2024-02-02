@@ -1,21 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Lab3App
 {
-    internal class CollectionBoard
+    public class CollectionBoard
     {
         private int totalScore;
         private int totalValue;
 
-        public void UpdateScore(int score)
+        public int TotalScore
         {
-            totalScore += score;
-            Console.WriteLine($"Total Score is updated to: {totalScore}");
+            get { return totalScore; }
+            set { totalScore = value; }
         }
 
-        public void UpdateValue(int value)
+        public int TotalValue
         {
-            totalValue += value;
-            Console.WriteLine($"Total Value is updated to: {totalValue}");
+            get { return totalValue; }
+            set { totalValue = value; }
         }
     }
 }

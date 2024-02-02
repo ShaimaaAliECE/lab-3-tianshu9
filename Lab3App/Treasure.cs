@@ -1,24 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class Treasure : Collectable
+    public abstract class Treasure : Collectable
     {
-        public Treasure(string name, int score, int value) : base(name, score, value) { }
+        private int Score;
+
+        public Treasure(string Name, int Score) : base(Name)
+        {
+            this.Score = Score;
+        }
+
+        public void UpdateTotalScore()
+        {
+            Board.TotalScore += this.Score;
+            Console.WriteLine("Total score is updated to: " + Board.TotalScore);
+        }
 
         public override void AddMe(List<Collectable> collected)
         {
-            collected.Add(this);
-            Console.WriteLine($"{Name} Collected, Congrats!!!!");
-            Board.UpdateScore(Score);
-            Board.UpdateValue(Value);
-        }
-
-        public override void Display()
-        {
-            Console.WriteLine($"Treasure {Name} is displayed");
+            base.AddMe(collected);
+            UpdateTotalScore();
         }
     }
 }
-

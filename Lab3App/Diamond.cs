@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class Diamond : Collectable
+    public class Diamond : Treasure
     {
-        public Diamond(string name, int score) : base(name, score, 0) { }
-
-        public override void AddMe(List<Collectable> collected)
-        {
-            collected.Add(this);
-            Console.WriteLine($"{Name} Collected, Congrats!!!!");
-            Board.UpdateScore(Score);
-        }
+        public Diamond(string Name, int score) : base(Name, score) { }
 
         public override void Display()
         {
-            Console.WriteLine($"Diamond{Name} is displayed");
+            Console.WriteLine("Diamond" + this.Name + " is displayed");
         }
     }
 }

@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-
-    internal class Tool : Collectable
+    public abstract class Tool : Collectable
     {
-        public Tool(string name, int score, int value) : base(name, score, value) { }
+        public Tool(string Name) : base(Name) { }
 
         public override void AddMe(List<Collectable> collected)
         {
-            collected.Add(this);
+            base.AddMe(collected);
+
+            DoAction();
         }
 
-        public override void Display()
-        {
-            Console.WriteLine($"Coin: {Name}, Score: {Score}, Value: {Value}");
-        }
+        public virtual void DoAction() { }
     }
-
 }
-

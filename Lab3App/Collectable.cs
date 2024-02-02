@@ -1,25 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Authentication.ExtendedProtection;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-	internal abstract class Collectable : Displayable
-	{
-		public string Name { get; set; }
-		public int Score { get; set; }
-		public int Value { get; set; }
-		public CollectionBoard Board { get; set; }
+    public abstract class Collectable : Displayable
+    {
+        protected string Name;
+        public CollectionBoard Board;
 
-		public Collectable(string name, int score, int value)
-		{
-			Name = name;
-			Score = score;
-			Value = value;
-		}
+        public Collectable(string Name)
+        {
+            this.Name = Name;
+        }
 
-		public abstract void AddMe(List<Collectable> collected);
+        public virtual void AddMe(List<Collectable> collected)
+        {
+            collected.Add(this);
+            Console.WriteLine(this.Name + " collected, congrats!!!");
+        }
 
-		public abstract void Display();
-	}
+        public abstract void Display();
+    }
 }
-

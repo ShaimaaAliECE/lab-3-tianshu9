@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class MagicWand : Collectable
+    public class MagicWand : Tool
     {
-        public MagicWand(string name) : base(name, score: 0, value: 0) { }
+        public MagicWand(string Name) : base(Name) { }
 
-        public override void AddMe(List<Collectable> collected)
+        public override void DoAction()
         {
-            collected.Add(this);
-            Console.WriteLine($"{Name} Collected, Congrats!!!!");
             Console.WriteLine("MagicWand is used");
         }
 
         public override void Display()
         {
-            Console.WriteLine($"MagicWand {Name} is displayed");
+            Console.WriteLine(String.Format("MagicWand {0} is displayed", this.Name));
         }
     }
 }
-

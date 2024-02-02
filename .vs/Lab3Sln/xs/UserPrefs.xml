@@ -1,35 +1,45 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{F8D03A7A-BFDF-4CDB-8840-ACC9EA70E485}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Lab3App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="{F8D03A7A-BFDF-4CDB-8840-ACC9EA70E485}|Default" GitUserInfo="UsingMD">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3App/Axe.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Lab3App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab3App/Tool.cs">
     <Files>
-      <File FileName="Lab3App/Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="Lab3App/Program.cs" Line="42" Column="31" />
+      <File FileName="Lab3App/Axe.cs" Line="14" Column="46" IsPinned="True" />
+      <File FileName="Lab3App/Properties/AssemblyInfo.cs" />
+      <File FileName="Lab3App/Program.cs" Line="56" Column="34" />
       <File FileName="Lab3App/App.config" Line="1" Column="1" />
-      <File FileName="Lab3App/Axe.cs" Line="23" Column="1" />
       <File FileName="Lab3App/Coin.cs" Line="22" Column="6" />
-      <File FileName="Lab3App/Collectable.cs" Line="20" Column="31" />
-      <File FileName="Lab3App/Tool.cs" Line="9" Column="20" />
-      <File FileName="Lab3App/Diamond.cs" Line="19" Column="40" />
-      <File FileName="Lab3App/MagicWand.cs" Line="21" Column="6" />
-      <File FileName="Lab3App/CollectionBoard.cs" Line="19" Column="10" />
-      <File FileName="Lab3App/Treasure.cs" Line="22" Column="6" />
-      <File FileName="Lab3App/Displayable.cs" Line="7" Column="6" />
+      <File FileName="Lab3App/Collectable.cs" Line="1" Column="1" />
+      <File FileName="Lab3App/Tool.cs" Line="18" Column="16" />
+      <File FileName="Lab3App/Diamond.cs" Line="6" Column="38" />
+      <File FileName="Lab3App/CollectionBoard.cs" Line="23" Column="1" />
+      <File FileName="Lab3App/Treasure.cs" Line="18" Column="37" />
+      <File FileName="Lab3App/Displayable.cs" Line="1" Column="1" />
+      <File FileName="Lab3App/MagicWand.cs" Line="17" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab3Sln">
-            <Node name="Lab3App" expanded="True">
+            <Node name="Lab3App">
               <Node name="Properties" expanded="True" />
-              <Node name="Axe.cs" selected="True" />
+              <Node name="Coin.cs" selected="True" />
+              <Node name="Collectable.cs" selected="True" />
+              <Node name="CollectionBoard.cs" selected="True" />
+              <Node name="Diamond.cs" selected="True" />
+              <Node name="Displayable.cs" selected="True" />
+              <Node name="MagicWand.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
+              <Node name="Tool.cs" selected="True" />
+              <Node name="Treasure.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
